@@ -11,7 +11,7 @@
 
   <title>Albert Sir | Punter Academy</title>
 
-  <!-- CINEMATIC / MOVIE STYLE FONTS -->
+  <!-- PREMIUM CINEMATIC FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -42,36 +42,34 @@
     body {
       background: #03070c;
       color: #ffffff;
-
       font-family: "Inter", sans-serif;
-
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
     }
 
 
     /* =========================================
-       MAIN PAGE
+       MAIN SCREEN
     ========================================= */
 
     .page {
       width: 100%;
       height: 100dvh;
-      min-height: 570px;
+      min-height: 560px;
 
       position: relative;
       overflow: hidden;
 
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
 
-      padding: 10px 12px;
+      padding: 9px 12px;
     }
 
 
     /* =========================================
-       PREMIUM BACKGROUND
+       BACKGROUND
     ========================================= */
 
     .bg-grid {
@@ -80,12 +78,12 @@
 
       background-image:
         linear-gradient(
-          rgba(90, 190, 255, 0.035) 1px,
+          rgba(80, 190, 255, 0.035) 1px,
           transparent 1px
         ),
         linear-gradient(
           90deg,
-          rgba(90, 190, 255, 0.035) 1px,
+          rgba(80, 190, 255, 0.035) 1px,
           transparent 1px
         );
 
@@ -95,8 +93,8 @@
         linear-gradient(
           to bottom,
           transparent,
-          black 15%,
-          black 85%,
+          black 14%,
+          black 86%,
           transparent
         );
     }
@@ -108,7 +106,7 @@
       width: 350px;
       height: 350px;
 
-      top: -180px;
+      top: -175px;
       left: -150px;
 
       border-radius: 50%;
@@ -127,8 +125,8 @@
       width: 320px;
       height: 320px;
 
-      bottom: -180px;
-      right: -150px;
+      bottom: -175px;
+      right: -145px;
 
       border-radius: 50%;
 
@@ -143,17 +141,17 @@
     .purple-orb {
       position: absolute;
 
-      width: 190px;
-      height: 190px;
+      width: 180px;
+      height: 180px;
 
       top: 42%;
-      right: -120px;
+      right: -110px;
 
       border-radius: 50%;
 
       background: rgba(120, 80, 255, 0.06);
 
-      filter: blur(70px);
+      filter: blur(65px);
     }
 
 
@@ -184,7 +182,7 @@
 
 
     /* =========================================
-       CONTENT CONTAINER
+       MAIN CONTAINER
     ========================================= */
 
     .container {
@@ -201,12 +199,12 @@
       flex-direction: column;
       justify-content: space-between;
 
-      padding: 7px 2px;
+      padding: 5px 2px;
     }
 
 
     /* =========================================
-       TOP STATUS
+       LIVE PILL
     ========================================= */
 
     .top {
@@ -290,43 +288,42 @@
 
 
     /* =========================================
-       LOGO STAGE
+       LOGO AREA
     ========================================= */
 
     .logo-stage {
-      width: 150px;
-      height: 145px;
+      width: 145px;
+      height: 140px;
 
-      margin: 2px auto -2px;
+      margin: 1px auto -2px;
 
       position: relative;
 
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
     }
 
 
-    /* Rotating outer ring */
+    /* Rotating ring */
 
     .logo-ring {
       position: absolute;
 
-      width: 125px;
-      height: 125px;
+      width: 122px;
+      height: 122px;
 
       border-radius: 50%;
 
-      border: 1px solid rgba(75, 190, 255, .3);
+      border: 1px solid rgba(75,190,255,.3);
 
-      border-top-color: rgba(95, 255, 165, .85);
-
-      border-right-color: rgba(60, 190, 255, .65);
+      border-top-color: rgba(95,255,165,.85);
+      border-right-color: rgba(60,190,255,.65);
 
       animation: rotateRing 7s linear infinite;
 
       box-shadow:
-        0 0 25px rgba(30, 175, 255, .13);
+        0 0 25px rgba(30,175,255,.13);
     }
 
 
@@ -362,21 +359,19 @@
     }
 
 
-    /* Logo glow */
-
     .logo-glow {
       position: absolute;
 
-      width: 110px;
-      height: 110px;
+      width: 108px;
+      height: 108px;
 
       border-radius: 50%;
 
       background:
         radial-gradient(
           circle,
-          rgba(20, 180, 255, .24),
-          rgba(40, 255, 155, .08) 48%,
+          rgba(20,180,255,.24),
+          rgba(40,255,155,.08) 48%,
           transparent 72%
         );
 
@@ -402,19 +397,19 @@
 
 
     /* =========================================
-       FLOATING SPORTS ICONS
+       SPORTS FLOATING ELEMENTS
     ========================================= */
 
     .football {
       position: absolute;
 
-      right: -3px;
-      top: 18px;
+      right: -4px;
+      top: 17px;
 
-      font-size: 25px;
+      font-size: 24px;
 
       filter:
-        drop-shadow(0 0 8px rgba(255,255,255,.3));
+        drop-shadow(0 0 9px rgba(255,255,255,.35));
 
       animation: footballFloat 3s ease-in-out infinite;
     }
@@ -423,13 +418,13 @@
     .cricket {
       position: absolute;
 
-      left: -7px;
-      bottom: 15px;
+      left: -6px;
+      bottom: 13px;
 
-      font-size: 25px;
+      font-size: 24px;
 
       filter:
-        drop-shadow(0 0 8px rgba(90,220,255,.35));
+        drop-shadow(0 0 9px rgba(70,215,255,.35));
 
       animation: cricketFloat 3.4s ease-in-out infinite;
     }
@@ -465,8 +460,8 @@
       position: relative;
       z-index: 5;
 
-      width: 101px;
-      height: 101px;
+      width: 100px;
+      height: 100px;
 
       object-fit: contain;
 
@@ -496,11 +491,6 @@
     /* =========================================
        BRANDING
     ========================================= */
-
-    .brand-title {
-      margin-top: -1px;
-    }
-
 
     .brand-title h1 {
       font-family: "Bebas Neue", sans-serif;
@@ -551,7 +541,7 @@
 
       margin-top: 5px;
 
-      padding: 4px 11px;
+      padding: 4px 12px;
 
       border-left: 2px solid #55d8ff;
       border-right: 2px solid #66ffa9;
@@ -577,15 +567,14 @@
     .ticker-window {
       width: 100%;
 
-      margin-top: 9px;
+      margin-top: 8px;
 
       overflow: hidden;
 
       border-top: 1px solid rgba(100,200,255,.09);
       border-bottom: 1px solid rgba(100,200,255,.09);
 
-      background:
-        rgba(255,255,255,.018);
+      background: rgba(255,255,255,.018);
 
       white-space: nowrap;
     }
@@ -603,7 +592,7 @@
 
 
     .ticker span {
-      margin-right: 35px;
+      margin-right: 34px;
 
       font-size: 9px;
 
@@ -641,7 +630,7 @@
 
 
     /* =========================================
-       MIDDLE SECTION
+       MIDDLE
     ========================================= */
 
     .middle {
@@ -650,17 +639,17 @@
 
 
     /* =========================================
-       ACTIVE RATE
+       LIQUID ACTIVE RATE
     ========================================= */
 
     .active-card {
       width: 94%;
 
-      margin: 8px auto 8px;
+      margin: 7px auto 9px;
 
       padding: 9px 13px;
 
-      border-radius: 13px;
+      border-radius: 14px;
 
       border: 1px solid rgba(72,255,154,.16);
 
@@ -681,6 +670,7 @@
       display: flex;
 
       align-items: center;
+
       justify-content: space-between;
     }
 
@@ -701,94 +691,168 @@
     .active-value {
       font-family: "Bebas Neue", sans-serif;
 
-      font-size: 22px;
+      font-size: 23px;
 
       line-height: 1;
 
       color: #61ff9d;
 
       text-shadow:
-        0 0 15px rgba(70,255,145,.25);
+        0 0 15px rgba(70,255,145,.3);
     }
 
 
-    .progress-track {
+    /* LIQUID BAR */
+
+    .liquid-track {
       width: 100%;
-      height: 5px;
+      height: 8px;
 
       margin-top: 7px;
 
-      border-radius: 99px;
+      position: relative;
 
       overflow: hidden;
 
-      background: rgba(255,255,255,.07);
+      border-radius: 999px;
+
+      background:
+        rgba(255,255,255,.07);
+
+      box-shadow:
+        inset 0 1px 3px rgba(0,0,0,.5);
     }
 
 
-    .progress-fill {
+    .liquid-fill {
+      width: 93%;
       height: 100%;
 
-      width: 93%;
+      position: relative;
 
-      border-radius: 99px;
+      overflow: hidden;
+
+      border-radius: 999px;
 
       background:
         linear-gradient(
           90deg,
-          #25c9ff,
-          #58ff9b
+          #18c8ff,
+          #45f99b,
+          #8bffbd
         );
 
       box-shadow:
-        0 0 12px rgba(70,255,150,.4);
-
-      animation:
-        progressPulse 2.2s ease-in-out infinite alternate;
+        0 0 14px rgba(70,255,155,.5);
     }
 
 
-    @keyframes progressPulse {
+    /* Moving liquid wave */
+
+    .liquid-fill::before {
+      content: "";
+
+      position: absolute;
+
+      width: 180%;
+
+      height: 220%;
+
+      left: -25%;
+      top: -62%;
+
+      background:
+        repeating-radial-gradient(
+          ellipse at center,
+          rgba(255,255,255,.28) 0px,
+          rgba(255,255,255,.28) 2px,
+          transparent 3px,
+          transparent 13px
+        );
+
+      opacity: .45;
+
+      animation:
+        liquidWave 2.4s linear infinite;
+    }
+
+
+    .liquid-fill::after {
+      content: "";
+
+      position: absolute;
+
+      width: 55px;
+      height: 100%;
+
+      top: 0;
+      left: -60px;
+
+      background:
+        linear-gradient(
+          90deg,
+          transparent,
+          rgba(255,255,255,.6),
+          transparent
+        );
+
+      transform: skewX(-18deg);
+
+      animation:
+        liquidShine 2.5s infinite;
+    }
+
+
+    @keyframes liquidWave {
 
       from {
-        opacity: .72;
-        filter: brightness(.9);
+        transform: translateX(0) rotate(0deg);
       }
 
       to {
-        opacity: 1;
-        filter: brightness(1.25);
+        transform: translateX(-38px) rotate(3deg);
+      }
+
+    }
+
+
+    @keyframes liquidShine {
+
+      0% {
+        left: -60px;
+      }
+
+      55%,
+      100% {
+        left: 120%;
       }
 
     }
 
 
     /* =========================================
-       HIGHLIGHTS
+       MINI FEATURE ELEMENTS
     ========================================= */
 
-    .highlights {
+    .features {
       display: grid;
 
       grid-template-columns: repeat(3, 1fr);
 
       gap: 7px;
 
-      width: 100%;
+      width: 94%;
+
+      margin: 0 auto;
     }
 
 
-    .highlight {
-      min-height: 69px;
+    .feature {
+      height: 69px;
 
       position: relative;
 
       overflow: hidden;
-
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
 
       border-radius: 13px;
 
@@ -805,116 +869,301 @@
         inset 0 1px rgba(255,255,255,.045),
         0 8px 20px rgba(0,0,0,.2);
 
-      backdrop-filter: blur(13px);
+      backdrop-filter: blur(12px);
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
 
 
-    .highlight::before {
-      content: "";
+    .feature-name {
+      margin-top: 3px;
 
-      position: absolute;
+      font-family: "Oswald", sans-serif;
 
-      width: 55px;
-      height: 55px;
+      font-size: 9px;
 
-      top: -28px;
-      right: -28px;
+      font-weight: 700;
 
-      border-radius: 50%;
+      letter-spacing: 1.3px;
 
-      background: rgba(65,220,255,.13);
-
-      filter: blur(7px);
-    }
-
-
-    .highlight-value {
-      position: relative;
-      z-index: 2;
-
-      font-family: "Bebas Neue", sans-serif;
-
-      font-size: 25px;
-
-      line-height: 1;
-
-      color: #eefaff;
-
-      letter-spacing: 1px;
-    }
-
-
-    .highlight-value.green {
-      color: #61ff9f;
-    }
-
-
-    .highlight-value.blue {
-      color: #65d8ff;
-    }
-
-
-    .highlight-label {
-      position: relative;
-      z-index: 2;
-
-      margin-top: 5px;
-
-      font-size: 7px;
-
-      font-weight: 900;
-
-      letter-spacing: 1px;
-
-      color: #8ea9b9;
+      color: #dcefff;
 
       text-transform: uppercase;
-
-      text-align: center;
     }
 
 
     /* =========================================
-       COMMUNITY TEXT
+       MINI CRICKET ANIMATION
     ========================================= */
 
-    .community {
-      text-align: center;
+    .mini-cricket {
+      width: 43px;
+      height: 27px;
 
-      margin-top: 8px;
+      position: relative;
     }
 
 
-    .community h2 {
-      font-family: "Bebas Neue", sans-serif;
+    .bat {
+      position: absolute;
 
-      font-size: 25px;
+      width: 6px;
+      height: 28px;
 
-      line-height: 1;
+      left: 13px;
+      top: 0;
 
-      letter-spacing: 1.6px;
+      border-radius: 4px;
 
-      color: #ffffff;
+      background:
+        linear-gradient(
+          90deg,
+          #9bc5d5,
+          #ffffff,
+          #6c9cad
+        );
+
+      transform: rotate(25deg);
+
+      transform-origin: bottom center;
+
+      animation: batSwing 1.7s ease-in-out infinite;
     }
 
 
-    .community h2 span {
-      color: #62d8ff;
+    .bat::after {
+      content: "";
+
+      position: absolute;
+
+      width: 5px;
+      height: 10px;
+
+      left: .5px;
+      bottom: -7px;
+
+      border-radius: 3px;
+
+      background: #394d58;
     }
 
 
-    .community p {
-      max-width: 350px;
+    .ball {
+      position: absolute;
 
-      margin: 4px auto 0;
+      width: 7px;
+      height: 7px;
 
-      font-size: 9px;
+      border-radius: 50%;
 
-      line-height: 1.5;
+      background: #ff4d55;
 
-      font-weight: 600;
+      box-shadow:
+        0 0 9px rgba(255,70,80,.65);
 
-      color: rgba(255,255,255,.56);
+      left: 31px;
+      top: 5px;
+
+      animation: ballMove 1.7s ease-in-out infinite;
+    }
+
+
+    @keyframes batSwing {
+
+      0%,100% {
+        transform: rotate(25deg);
+      }
+
+      45% {
+        transform: rotate(-28deg);
+      }
+
+    }
+
+
+    @keyframes ballMove {
+
+      0% {
+        transform: translate(0, 0);
+      }
+
+      45% {
+        transform: translate(-20px, 11px);
+      }
+
+      65% {
+        transform: translate(-5px, 18px);
+      }
+
+      100% {
+        transform: translate(0, 0);
+      }
+
+    }
+
+
+    /* =========================================
+       MINI FOOTBALL ANIMATION
+    ========================================= */
+
+    .mini-football {
+      width: 43px;
+      height: 27px;
+
+      position: relative;
+
+      display: flex;
+
+      justify-content: center;
+
+      align-items: center;
+    }
+
+
+    .mini-football .ball-icon {
+      font-size: 22px;
+
+      filter:
+        drop-shadow(0 0 7px rgba(90,210,255,.35));
+
+      animation: footballKick 1.8s ease-in-out infinite;
+    }
+
+
+    .football-line {
+      position: absolute;
+
+      width: 31px;
+      height: 2px;
+
+      bottom: 3px;
+
+      border-radius: 99px;
+
+      background:
+        linear-gradient(
+          90deg,
+          transparent,
+          rgba(80,210,255,.6),
+          transparent
+        );
+
+      animation: linePulse 1.8s ease-in-out infinite;
+    }
+
+
+    @keyframes footballKick {
+
+      0%,100% {
+        transform: translateX(-5px) rotate(-10deg);
+      }
+
+      50% {
+        transform: translateX(7px) rotate(15deg);
+      }
+
+    }
+
+
+    @keyframes linePulse {
+
+      0%,100% {
+        opacity: .25;
+        transform: scaleX(.65);
+      }
+
+      50% {
+        opacity: 1;
+        transform: scaleX(1);
+      }
+
+    }
+
+
+    /* =========================================
+       MINI ANALYSIS ANIMATION
+    ========================================= */
+
+    .mini-analysis {
+      width: 45px;
+      height: 29px;
+
+      position: relative;
+
+      display: flex;
+
+      align-items: flex-end;
+
+      justify-content: center;
+
+      gap: 3px;
+    }
+
+
+    .analysis-bar {
+      width: 5px;
+
+      border-radius: 3px 3px 1px 1px;
+
+      background:
+        linear-gradient(
+          to top,
+          #36cfff,
+          #66ffa9
+        );
+
+      box-shadow:
+        0 0 7px rgba(60,220,255,.2);
+
+      animation: analysisBars 1.4s ease-in-out infinite;
+    }
+
+
+    .analysis-bar:nth-child(1) {
+      height: 11px;
+      animation-delay: 0s;
+    }
+
+
+    .analysis-bar:nth-child(2) {
+      height: 19px;
+      animation-delay: .15s;
+    }
+
+
+    .analysis-bar:nth-child(3) {
+      height: 14px;
+      animation-delay: .3s;
+    }
+
+
+    .analysis-bar:nth-child(4) {
+      height: 25px;
+      animation-delay: .45s;
+    }
+
+
+    .analysis-bar:nth-child(5) {
+      height: 20px;
+      animation-delay: .6s;
+    }
+
+
+    @keyframes analysisBars {
+
+      0%,100% {
+        transform: scaleY(.65);
+        opacity: .55;
+      }
+
+      50% {
+        transform: scaleY(1);
+        opacity: 1;
+      }
+
     }
 
 
@@ -932,7 +1181,7 @@
     .cta {
       width: 94%;
 
-      min-height: 56px;
+      min-height: 57px;
 
       position: relative;
 
@@ -997,7 +1246,7 @@
     }
 
 
-    /* CTA light sweep */
+    /* CTA shine */
 
     .cta::before {
       content: "";
@@ -1100,7 +1349,7 @@
 
 
     /* =========================================
-       ENTRY ANIMATION
+       ENTRY
     ========================================= */
 
     @keyframes entrance {
@@ -1119,48 +1368,46 @@
 
 
     /* =========================================
-       SHORT MOBILE SCREENS
+       SMALL HEIGHT MOBILE
     ========================================= */
 
     @media (max-height: 680px) {
 
       .page {
-        padding: 6px 11px;
+        padding: 5px 10px;
       }
 
       .container {
-        padding: 2px;
+        padding: 1px 2px;
       }
 
       .logo-stage {
-        width: 115px;
-        height: 111px;
-
-        margin-top: 0;
+        width: 112px;
+        height: 108px;
       }
 
       .logo {
-        width: 80px;
-        height: 80px;
+        width: 79px;
+        height: 79px;
       }
 
       .logo-ring {
-        width: 100px;
-        height: 100px;
+        width: 98px;
+        height: 98px;
       }
 
       .logo-glow {
-        width: 90px;
-        height: 90px;
+        width: 88px;
+        height: 88px;
       }
 
       .football {
-        font-size: 20px;
-        right: -1px;
+        font-size: 19px;
+        right: 0;
       }
 
       .cricket {
-        font-size: 20px;
+        font-size: 19px;
         left: 0;
       }
 
@@ -1174,35 +1421,24 @@
       }
 
       .ticker-window {
-        margin-top: 6px;
+        margin-top: 5px;
       }
 
-      .ticker span {
+      .ticker {
         padding: 5px 0;
       }
 
       .active-card {
-        margin: 6px auto;
+        margin-top: 5px;
+        margin-bottom: 7px;
       }
 
-      .highlight {
-        min-height: 60px;
-      }
-
-      .highlight-value {
-        font-size: 22px;
-      }
-
-      .community {
-        margin-top: 6px;
-      }
-
-      .community h2 {
-        font-size: 22px;
+      .feature {
+        height: 60px;
       }
 
       .cta {
-        min-height: 51px;
+        min-height: 50px;
       }
 
     }
@@ -1233,6 +1469,7 @@
   <main class="page">
 
     <!-- BACKGROUND -->
+
     <div class="bg-grid"></div>
 
     <div class="blue-orb"></div>
@@ -1243,11 +1480,12 @@
     <section class="container">
 
 
-      <!-- ===================================
+      <!-- =================================
            TOP
-      ==================================== -->
+      ================================== -->
 
       <div class="top">
+
 
         <!-- LIVE STATUS -->
 
@@ -1270,7 +1508,8 @@
 
           <div class="logo-glow"></div>
 
-          <!-- Animated sports elements -->
+
+          <!-- Floating sports elements -->
 
           <div class="football">
             ⚽
@@ -1281,7 +1520,7 @@
           </div>
 
 
-          <!-- Keep logo.png in same folder -->
+          <!-- Same folder: logo.png -->
 
           <img
             src="logo.png"
@@ -1292,7 +1531,7 @@
         </div>
 
 
-        <!-- MAIN BRANDING -->
+        <!-- BRAND -->
 
         <div class="brand-title">
 
@@ -1334,7 +1573,8 @@
               🏏 MATCH ANALYSIS
             </span>
 
-            <!-- Duplicate for seamless movement -->
+
+            <!-- Duplicate for seamless loop -->
 
             <span class="green">
               ● TODAY'S CURRENT ACTIVE RATE — 93%
@@ -1355,14 +1595,14 @@
       </div>
 
 
-      <!-- ===================================
+      <!-- =================================
            MIDDLE
-      ==================================== -->
+      ================================== -->
 
       <div class="middle">
 
 
-        <!-- ACTIVE RATE -->
+        <!-- LIQUID ACTIVE RATE -->
 
         <div class="active-card">
 
@@ -1379,84 +1619,91 @@
           </div>
 
 
-          <div class="progress-track">
+          <div class="liquid-track">
 
-            <div class="progress-fill"></div>
+            <div class="liquid-fill"></div>
 
           </div>
 
         </div>
 
 
-        <!-- HIGHLIGHTS -->
+        <!-- =================================
+             THREE MINI ANIMATED FEATURES
+        ================================== -->
 
-        <div class="highlights">
+        <div class="features">
 
 
-          <div class="highlight">
+          <!-- CRICKET -->
 
-            <div class="highlight-value blue">
-              2015+
+          <div class="feature">
+
+            <div class="mini-cricket">
+
+              <div class="bat"></div>
+
+              <div class="ball"></div>
+
             </div>
 
-            <div class="highlight-label">
-              Experience
-            </div>
-
-          </div>
-
-
-          <div class="highlight">
-
-            <div class="highlight-value green">
-              HIGH
-            </div>
-
-            <div class="highlight-label">
-              Success Rate
+            <div class="feature-name">
+              Cricket
             </div>
 
           </div>
 
 
-          <div class="highlight">
+          <!-- FOOTBALL -->
 
-            <div class="highlight-value">
-              4.9 ✨
+          <div class="feature">
+
+            <div class="mini-football">
+
+              <div class="ball-icon">
+                ⚽
+              </div>
+
+              <div class="football-line"></div>
+
             </div>
 
-            <div class="highlight-label">
-              Trust Score
+            <div class="feature-name">
+              Football
             </div>
 
           </div>
 
 
-        </div>
+          <!-- ANALYSIS -->
 
+          <div class="feature">
 
-        <!-- COMMUNITY DESCRIPTION -->
+            <div class="mini-analysis">
 
-        <div class="community">
+              <div class="analysis-bar"></div>
+              <div class="analysis-bar"></div>
+              <div class="analysis-bar"></div>
+              <div class="analysis-bar"></div>
+              <div class="analysis-bar"></div>
 
-          <h2>
-            THE <span>GAME</span> STARTS HERE
-          </h2>
+            </div>
 
-          <p>
-            Cricket & football focused community featuring
-            match insights, market observations and regular
-            updates for active members.
-          </p>
+            <div class="feature-name">
+              Analysis
+            </div>
+
+          </div>
+
 
         </div>
 
       </div>
 
 
-      <!-- ===================================
+      <!-- =================================
            CTA
-      ==================================== -->
+      ================================== -->
 
       <div class="cta-area">
 
@@ -1488,9 +1735,7 @@
       <!-- FOOTER -->
 
       <div class="footer">
-
         ALBERT SIR • PUNTER ACADEMY • CRICKET & FOOTBALL
-
       </div>
 
 
